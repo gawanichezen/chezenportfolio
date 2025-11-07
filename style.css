@@ -22,6 +22,31 @@
     --transition-speed: 0.3s;
 }
 
+
+/* REUSABLE CSS USED ONLY FOR ABOUT PART */
+
+.container{
+    max-width: 1024px;
+    margin-inline: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 2.5rem;
+}
+
+.section.border {
+    border-bottom: 1px solid var();
+    padding-bottom: 3.5rem;
+}
+
+/* REUSABLE CSS USED ONLY FOR ABOUT PART ends here */
+
+
 html {
     font-size: 62.5%;
     overflow-x:hidden;
@@ -150,16 +175,47 @@ span{
 }
 
 
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
+.qualification {
     background: var(--second-bg-color);
+    position: relative;
 
 }
 
-.about-content {
+.qualifications-container{
+    row-gap: 3.5rem;
+}
 
+.qualification-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: var();
+    font-weight: var();
+    margin-bottom: 2rem;
+
+}
+
+.qualification-title i{
+    font-size: 1rem;
+    font-weight: initial;
+}
+
+.qualification-info {
+    display: grid;
+    row-gap: 2rem;
+
+}
+
+.qualification-name {
+    font-size: var();
+    margin-bottom: 1.25rem;
+
+}
+
+.qualification-year, .qualification-degree {
+    display: block;
+    font-size: var();
+    color: var();
 
 }
