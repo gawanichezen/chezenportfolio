@@ -85,6 +85,8 @@ section {
     font-size: 6rem;
 }
 
+
+/* NAVBAR CSS */
 .navbar a {
 
     font-size: 2rem;
@@ -99,6 +101,12 @@ section {
     transition: var(--transition-speed);
 }
 
+.navbar a.active {
+    color: #ffb400; /* stays yellow */
+}
+
+
+/* HOME SECTION CSS */
 .home {
     display: flex;
     justify-content: center;
@@ -108,7 +116,7 @@ section {
 
 .home-img img {
     margin-top: 10px;
-    width: 600px;
+    width: 670px;
     border-radius: var(--border-radius);
     Bottom: 0;  
 }
@@ -175,25 +183,51 @@ span{
 }
 
 
+/* QUALIFICATION SECTION CSS */
+
+.section-title {
+    text-align: center; /* center horizontally */
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: gray;
+    margin-bottom: 3rem;
+}
+
 .qualification {
-    background: var(--second-bg-color);
-    position: relative;
-
-}
-
-.qualifications-container{
-    row-gap: 3.5rem;
-}
-
-.qualification-title{
+    background-color: var(--second-bg-color);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: .5rem;
-    font-size: var();
-    font-weight: var();
-    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center; /* center everything inside the section */
+    padding-top: 12rem;
+}
 
+.qualification-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.qualification-content {
+    background-color: var(--background-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+}
+
+.qualification-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
 }
 
 .qualification-title i{
@@ -219,3 +253,42 @@ span{
     color: var();
 
 }
+
+
+.qualification-info .qualification-name {
+    font-size: 2.5rem; /* bigger than default */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.qualification-info .qualification-degree {
+    font-size: 1.6rem;
+    color: #ffbd59; /* main color for emphasis */
+}
+
+.qualification-info .qualification-year {
+    font-size: 1.2rem;
+    color: gray;
+    margin-bottom: 0.25rem;
+}
+
+.qualification-item {
+    display: flex;
+    align-items: center; /* vertically align logo with text */
+    gap: 1.5rem; /* space between logo and text */
+    margin-bottom: 2rem; /* spacing between different qualifications */
+}
+
+.school-logo {
+    width: 50px; /* adjust size as needed */
+    height: 50px;
+    object-fit: contain;
+}
+
+.qualification-text {
+    display: flex;
+    flex-direction: column; /* stack name, degree, year vertically */
+}
+
