@@ -49,8 +49,15 @@
 
 html {
     font-size: 62.5%;
+    height: 100%;
     overflow-x:hidden;
     
+}
+
+html, body {
+    font-size: 62.5%;
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -484,3 +491,4 @@ span{
     font-size: 1.3rem;
 
 }
+
