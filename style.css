@@ -49,15 +49,8 @@
 
 html {
     font-size: 62.5%;
-    height: 100%;
     overflow-x:hidden;
     
-}
-
-html, body {
-    font-size: 62.5%;
-    height: 100%;
-    overflow: hidden;
 }
 
 body {
@@ -390,7 +383,7 @@ span{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(65rem, 1fr));
     gap: 2rem;
     visibility: hidden;
     opacity: 0;
@@ -483,12 +476,145 @@ span{
 /* RESUME  */
 
 .resume-box.education {
-    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(70rem, 1fr));
 }
 
 .resume-box.education .resume-item p {
     margin-top: 0.5;
     font-size: 1.3rem;
-
 }
 
+
+/* My Family Section */
+
+.family-section {
+    background-color: var(--second-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center everything inside the section */
+    padding-top: 12rem;
+}
+
+.family-title {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    color: var(--main-color);
+}
+
+.family-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 3rem;
+}
+
+/* Top middle (bigger box) */
+.family-item.large {
+    grid-column: 2 / 3; /* center */
+    grid-row: 1 / 2;
+}
+
+/* Regular items (bottom row) */
+.family-item {
+    background: var(--background-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Blank image box */
+.family-img {
+    width: 100%;
+    height: 180px;
+    background: #d9d9d9;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Text under each box */
+.family-desc {
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#my-family {
+    scroll-margin-top: 80px; /* adjust depending on navbar height */
+}
+
+.family-img {
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* prevents image from spilling outside */
+    border-radius: 10px; /* optional */
+}
+
+/* default family item small image */
+.family-item .family-img {
+  width: 520px;        /* desired width for normal boxes */
+  height: 500px;       /* desired height for normal boxes */
+  overflow: hidden;
+  border-radius: 8px;
+  display: block;
+}
+
+/* larger top-middle box */
+.family-item.large .family-img {
+  width: 520px;        /* bigger width for the large item */
+  height: 500px;       /* bigger height for the large item */
+}
+
+/* the actual image inside the box */
+.family-img .inside-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* <-- makes it crop to fill the box */
+  object-position: center;
+  display: block;
+}
+
+.father-img {
+    width: 520px;   /* directly increase image size */
+    height: auto;   /* keeps aspect ratio */
+    display: block;
+}
+
+
+/* PAGE NAV BUTTONS */
+.page-nav {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 200;
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: column; /* stack icon and text vertically */
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem; /* space between icon and text */
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.nav-text {
+  color: white;
+  font-size: 1.2rem; /* smaller text under icon */
+  font-weight: 500;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+}
+
+.nav-btn.hidden {
+    display: none;
+}
