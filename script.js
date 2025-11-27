@@ -35,7 +35,7 @@ resumeLists.forEach((list, idx) => {
 });
 
 // SECTION ORDER
-const sections = ["home", "qualification", "section resume", "family"];
+const sections = ["home", "qualification", "achievements", "family"];
 let currentIndex = 0;
 
 // BUTTONS
