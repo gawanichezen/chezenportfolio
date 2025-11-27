@@ -451,7 +451,7 @@ span{
 /* SKILLS  */
 
 .resume-box.skills {
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
 .resume-box.skills .resume-item {
@@ -476,7 +476,7 @@ span{
 /* RESUME  */
 
 .resume-box.education {
-    grid-template-columns: repeat(auto-fit, minmax(65rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
 }
 
 .resume-box.education .resume-item p {
@@ -505,7 +505,7 @@ span{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 /* Top middle (bigger box) */
@@ -619,3 +619,7 @@ span{
     display: none;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden; /* disables scrolling */
+}
