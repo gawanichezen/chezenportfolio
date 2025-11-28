@@ -560,6 +560,14 @@ span{
     color: var(--main-color);
 }
 
+.batchmates-title2 {
+    margin-top: -2rem;
+    margin-bottom: -1rem;
+    text-align: center;
+    color: darkgreen;
+    font-size: 2rem;
+}
+
 .batchmates-grid {
     display: grid;
     grid-template-columns: .4fr 1fr .4fr;
