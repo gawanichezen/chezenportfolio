@@ -318,7 +318,7 @@ span{
 
 /* RESUME SECTION */
 
-.achievements {
+.section.resume {
     transform: translateZ(-100vw);
     transform-origin: 50%;
 }
@@ -329,7 +329,7 @@ span{
     text-align: center;
     color: var(--main-color);
 }
-.achievements {
+.resume {
     padding-top: 2rem;
     padding-bottom: 28rem;
 }
@@ -383,7 +383,7 @@ span{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
     gap: 2rem;
     visibility: hidden;
     opacity: 0;
@@ -476,7 +476,7 @@ span{
 /* RESUME  */
 
 .resume-box.education {
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
 }
 
 .resume-box.education .resume-item p {
@@ -494,7 +494,7 @@ span{
 
 .family-title {
     font-size: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     color: var(--main-color);
 }
 
@@ -502,7 +502,7 @@ span{
 .family-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 2.5rem;
     width: 90%;
     max-width: 1400px;
     margin: auto;
@@ -536,7 +536,7 @@ span{
 
 /* Text */
 .family-desc {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 1.5;
     text-align: justify;
 }
@@ -545,6 +545,55 @@ span{
 #family {
     scroll-margin-top: 30px;
 }
+
+
+
+.batchmates-section {
+    min-height: 100vh;     /* makes the whole section tall enough */
+    padding: 8rem; /* gives it proper space like your other sections */
+    display: block;
+}
+
+.batchmates-title {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    margin-top: 5rem;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.batchmates-grid {
+    display: grid;
+    grid-template-columns: .4fr 1fr .4fr;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+.batchmates-item {
+    padding: 20px;
+}
+
+.batchmate-photo {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.batchmates-item ul {
+    list-style: none; /* removes bullets */
+    padding-left: 0;  /* remove default left padding */
+    margin: 0;        /* remove default margin */
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+
 
 
 /* PAGE NAV BUTTONS */
